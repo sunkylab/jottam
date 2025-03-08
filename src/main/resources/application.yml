@@ -1,0 +1,15 @@
+server:
+  port: 9034
+spring:
+  application:
+    name: WillBuddy
+  datasource:
+    url: jdbc:postgresql://localhost:5432/willox
+    username: postgres
+    password: mysecretpassword
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update #to be reverted to none
+    show-sql: false
+
